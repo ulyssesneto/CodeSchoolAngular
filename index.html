@@ -17,6 +17,7 @@
                         <li ng-class="active:panel.isSet(1)"><a href ng-click="panel.setTab(1)">Descrição</a></li>
                         <li ng-class="active:panel.isSet(2)"><a href ng-click="panel.setTab(2)">Especificação</a></li>
                         <li ng-class="active:panel.isSet(3)"><a href ng-click="panel.setTab(3)">Comentários</a></li>
+                        <li ng-class="active:panel.isSet(4)"><a href ng-click="panel.setTab(4)">QUARTO ELEMENTO</a></li>
                     </ul>
                     <div class="panel" ng-show="panel.isSet(1)">
                         <h4>Descrição</h4>
@@ -28,6 +29,10 @@
                     </div>
                     <div class="panel" ng-show="panel.isSet(3)">
                         <h4>Comentários</h4>
+                        <p>AINDA NAO TEM COMENTÁRIOS</p>
+                    </div>
+                    <div class="panel" ng-show="panel.isSet(4)">
+                        <h4>QUARTO ELEMENTO</h4>
                         <p>AINDA NAO TEM COMENTÁRIOS</p>
                     </div>
                 </section>
