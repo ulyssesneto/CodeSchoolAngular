@@ -8,7 +8,7 @@
     <body ng-controller="StoreController as store">
         <div ng-repeat="product in store.products | orderBy: '-price'">
             <div ng-show="product.isAvaliable">
-                <h1>{{product.images.length | uppercase}}</h1>
+                <h1>{{product.name | uppercase}}</h1>
                 <h2>{{product.price | currency}}</h2>
                 <p>{{product.updateDate | date:'MM/dd/yyyy @ h:mma'}}</p>
                 <img ng-src="{{product.images[0].full}}" width="100"/>
